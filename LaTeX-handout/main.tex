@@ -285,8 +285,43 @@ $$
      &= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots
 \end{align}
 
-\subsection{substack}
+\subsection{Equation references}    \label{refsect}
 
+\begin{equation}\label{ln}
+    f(x) = \ln x
+\end{equation}
+
+\begin{equation}
+    f(x) = \ln x 
+\end{equation}
+
+\[
+    f(x) = \ln x    
+\]
+
+\numberwithin{equation}{subsection}
+
+\begin{equation}
+    g(x) = e^x  \label{exp}
+\end{equation}
+
+From Equation \eqref{ln}, Equation \ref{ln} in subsection \ref{refsect}, we know that $f$ is a logarithmic function. Equation \eqref{exp}
+
+\begin{align}
+    \cos(x) &= \frac{\mathrm{d}\sin x}{\mathrm{d}x}\\
+     &= \sum_{n=0}^\infty \frac{(-1)^n}{(2n)!}\cdot x^{2n - 1} \label{3}\\
+     &= 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots \label{2}
+\end{align}
+
+We have \eqref{3}, \eqref{2}
+
+\begin{align*}
+    y &= \int_1^5 3x\, dx \\
+     &= \left. \frac{3}{2}x^2 \right]_1^5 \\
+     &= \frac{3}{2} \cdot (25 - 1) = 36
+\end{align*}
+
+\subsection{substack}
 
 
 
